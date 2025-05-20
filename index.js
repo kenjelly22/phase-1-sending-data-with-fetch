@@ -17,7 +17,7 @@ function submitData(name, email) {
       document.body.appendChild(element)
       element.appendChild(ul)
       const newListItem = document.createElement("li")
-      newListItem.textContent = `${user.name}: ${user.email}`
+      newListItem.textContent = `${user.id}. ${user.name}: ${user.email}`
       ul.appendChild(newListItem)
     })
     .catch((error) => {

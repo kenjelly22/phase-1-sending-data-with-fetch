@@ -35,19 +35,24 @@
   ],
   "users": [
     {
-      "name": "Jane Doe",
-      "email": "Jane@example.com",
+      "name": "Joe",
+      "email": "Joe@example.com",
       "id": 1
     },
     {
-      "name": "Susan",
-      "email": "Susan@example.com",
+      "name": "Ellie",
+      "email": "Ellie@example.com",
       "id": 2
     },
     {
-      "name": "Joe",
-      "email": "Joe@example.com",
+      "name": "Ellie",
+      "email": "Ellie@example.com",
       "id": 3
+    },
+    {
+      "name": "Ellie",
+      "email": "Ellie@example.com",
+      "id": 4
     }
   ],
   "robots": [
