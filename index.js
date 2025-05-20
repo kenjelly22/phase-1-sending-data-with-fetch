@@ -23,8 +23,7 @@ function submitData(name, email) {
     .catch((error) => {
       const alertError = document.createElement("div")
       document.body.appendChild(alertError)
-      const message = "Bad things! Ragnarők!"
-      alertError.textContent = `${error}.${message}`
+      alertError.textContent = error.message
     })
 }
 
