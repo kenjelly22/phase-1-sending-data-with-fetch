@@ -11,9 +11,14 @@ function submitData(name, email) {
     }),
   })
     .then((res) => res.json())
-    .then((data) => {
-      const user = data
-      console.log(user.id)
+    .then((user) => {
+      const element = document.createElement("div")
+      const ul = document.createElement("ul")
+      document.body.appendChild(element)
+      element.appendChild(ul)
+      const newListItem = document.createElement("li")
+      newListItem.textContent = `${user.name}: ${user.email}`
+      ul.appendChild(newListItem)
     })
     .catch((error) => {
       alert("Bad things! Ragnarők!")
@@ -21,14 +26,4 @@ function submitData(name, email) {
     })
 }
 
-submitData()
-
-const element = document.createElement("div")
-const ul = document.createElement("ul")
-
-document.body.appendChild(element)
-element.appendChild(ul)
-
-//  1) submitData()
-//        handles the POST request response, retrieves the new id value and appends it to the DOM:
-//      AssertionError: expected '\n    <script src="index.js"></script>\n  \n\n' to include 95
+submitData(user.name, user.email)
