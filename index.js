@@ -21,8 +21,10 @@ function submitData(name, email) {
       ul.appendChild(newListItem)
     })
     .catch((error) => {
-      alert("Bad things! Ragnarők!")
-      console.log(error.message)
+      const alertError = document.createElement("div")
+      document.body.appendChild(alertError)
+      const message = "Bad things! Ragnarők!"
+      alertError.textContent = `${error}.${message}`
     })
 }
 
